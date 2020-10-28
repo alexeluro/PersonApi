@@ -16,6 +16,7 @@ public class ControllerAdvice {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     String personNotFoundHandler(PersonNotFoundException ex) {
         return ex.getMessage();
+
     }
 
     @ResponseBody
